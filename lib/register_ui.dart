@@ -13,6 +13,10 @@ class _RegisterUiState extends State<RegisterUi> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(extendBodyBehindAppBar: true,
+         appBar: AppBar(
+          backgroundColor: Colors.transparent,
+        elevation: 0,
+      ),
         body: Stack(
           children: [
             Image.network(
@@ -24,7 +28,7 @@ class _RegisterUiState extends State<RegisterUi> {
                 child: Center(
                     child: Column(
                         children: [
-               Text(
+                Text(
                   'Welcome to',
                   style: GoogleFonts.bebasNeue(
                     fontSize: 65,
@@ -56,7 +60,7 @@ class _RegisterUiState extends State<RegisterUi> {
                           ),
                         ),
                       ),
-                      ),
+                      ),Center(),
                       SizedBox(
                         height: 10,),
                         Padding(

@@ -12,6 +12,10 @@ class _RegisterUi2State extends State<RegisterUi2> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(extendBodyBehindAppBar: true,
+         appBar: AppBar(
+          backgroundColor: Colors.transparent,
+        elevation: 0,
+      ),
         body: Stack(
           children: [
              Image.network(
